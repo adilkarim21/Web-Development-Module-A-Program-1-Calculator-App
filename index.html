@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <div class="container">
+	<fieldset id="container">
+		<form name="calculator">
+
+			<input class="display" id="inputField" type="text" name="display" readonly>
+
+			<button onclick="getValue(7)" class="button digits" type="button">7</button>
+            <button onclick="getValue(8)" class="button digits" type="button">8</button>
+            <button onclick="getValue(9)" class="button digits" type="button">9</button>
+			<button onclick="getValue('+')" class="button mathButtons" type="button">+</button>
+			<br>
+			<button onclick="getValue(4)" class="button digits" type="button">4</button>
+            <button onclick="getValue(5)" class="button digits" type="button">5</button>
+            <button onclick="getValue(6)" class="button digits" type="button">6</button>
+			<button onclick="getValue('-')" class="button mathButtons" type="button">-</button>
+			<br>
+			<button onclick="getValue(1)" class="button digits" type="button">1</button>
+            <button onclick="getValue(2)" class="button digits" type="button">2</button>
+            <button onclick="getValue(3)" class="button digits" type="button">3</button>
+			<button onclick="getValue('*')" class="button mathButtons" type="button">x</button>
+			<br>
+			<button onclick="clearAll()" id="clearButton" class="button" type="button">C</button>
+			<button onclick="getValue(0)" class="button digits" type="button">0</button>
+			<button onclick="equal()" class="button mathButtons" type="button">=</button>
+			<button onclick="getValue('/')" class="button mathButtons" type="button">/</button>
+		</form>
+	</fieldset>
+</div>
+  </body>
+  <script src="app.js"></script>
+</html>
